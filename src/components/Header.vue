@@ -35,6 +35,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/scss/_generics.scss";
+@import "@/assets/scss/_slider.scss";
 
 header {
   background-image: url("../assets/img/h5-slide-3-background.jpg");

@@ -1,5 +1,9 @@
 <template>
-  <div>test</div>
+  <ul class="p-0">
+    <li v-for="index in 3" :key="index">
+      <i class="fa-dot-circle" :class="isActive ? 'far' : 'fas'"></i>
+    </li>
+  </ul>
 </template>
 
 <script>
@@ -9,4 +13,13 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+li {
+  list-style-type: none;
+  display: inline-block;
+
+  i {
+    margin: 0 10px;
+  }
+}
+</style>
