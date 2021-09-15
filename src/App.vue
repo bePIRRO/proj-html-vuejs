@@ -1,8 +1,16 @@
 <template>
   <div id="app">
-    <Header />
-    <Main />
-    <Footer />
+    <header>
+      <Header />
+    </header>
+
+    <main>
+      <Main />
+    </main>
+
+    <footer>
+      <Footer />
+    </footer>
   </div>
 </template>
 
@@ -28,6 +36,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
