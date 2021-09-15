@@ -1,9 +1,11 @@
 <template>
-  <ul class="p-0">
-    <li v-for="index in 3" :key="index">
-      <i class="fa-dot-circle" :class="isActive ? 'far' : 'fas'"></i>
-    </li>
-  </ul>
+  <div id="slider">
+    <ul class="p-0">
+      <li v-for="index in 3" :key="index">
+        <i class="fa-dot-circle" :class="isActive ? 'far' : 'fas'"></i>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>

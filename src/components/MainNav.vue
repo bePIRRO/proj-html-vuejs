@@ -1,17 +1,19 @@
 <template>
-  <ul class="main-nav d-flex justify-content-around align-items-center py-5">
-    <li>
-      <a href="#"
-        ><img src="@/assets/img/logo-light.png" alt="iAcademy" class="logo"
-      /></a>
-    </li>
-    <li v-for="item in menu" :key="item" class="nav-links">
-      <a :href="item.link">{{ item.text }} </a>
-    </li>
-    <li><i class="fas fa-search"></i></li>
-    <li><i class="fas fa-shopping-bag"></i></li>
-    <li><i class="fas fa-bars"></i></li>
-  </ul>
+  <div>
+    <ul class="main-nav d-flex justify-content-around align-items-center py-5">
+      <li>
+        <a href="#"
+          ><img src="@/assets/img/logo-light.png" alt="iAcademy" class="logo"
+        /></a>
+      </li>
+      <li v-for="item in menu" :key="item" class="nav-links">
+        <a :href="item.link">{{ item.text }} </a>
+      </li>
+      <li><i class="fas fa-search"></i></li>
+      <li><i class="fas fa-shopping-bag"></i></li>
+      <li><i class="fas fa-bars"></i></li>
+    </ul>
+  </div>
 </template>
 
 <script>

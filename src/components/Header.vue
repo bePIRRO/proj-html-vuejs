@@ -1,5 +1,5 @@
 <template>
-  <header class="pb-5">
+  <header class="pb-5" id="header">
     <MainNav />
     <div class="my-5 py-5 container">
       <h1 class="display-1 my-5">Contemporary Ideas</h1>
@@ -13,9 +13,8 @@
       <div class="btn btn-blue my-5 border-0 rounded-0">
         <a href="#">REGISTER NOW</a>
       </div>
-
-      <Slider />
     </div>
+    <Slider />
   </header>
 </template>
 
@@ -35,7 +34,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/scss/_generics.scss";
-@import "@/assets/scss/_slider.scss";
 
 header {
   background-image: url("../assets/img/h5-slide-3-background.jpg");
