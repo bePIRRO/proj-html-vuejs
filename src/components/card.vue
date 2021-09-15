@@ -1,4 +1,13 @@
-<template> </template>
+<template>
+  <div class="card-container">
+    <a :href="card.link">
+      <div class="my-5 card">
+        <img :src="`../assets/img/${card.url}`" alt="img" class="m-5" />
+        <h3 class="mb-5">{{ card.text }}</h3>
+      </div>
+    </a>
+  </div>
+</template>
 
 <script>
 export default {
@@ -43,4 +52,17 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+@import "@/assets/scss/_generics.scss";
+a {
+  color: #303030;
+}
+
+.card {
+  background-color: #f2f8fc;
+}
+
+.card-container {
+  display: inline-block;
+}
+</style>
