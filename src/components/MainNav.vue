@@ -1,5 +1,5 @@
 <template>
-  <ul class="main-nav d-flex justify-content-between align-items-center mt-0">
+  <ul class="main-nav d-flex justify-content-around align-items-center py-5">
     <li>
       <a href="#"
         ><img src="@/assets/img/logo-light.png" alt="iAcademy" class="logo"
@@ -53,7 +53,6 @@ export default {
 
 <style scoped>
 ul {
-  background-color: #bbb;
   color: #fff;
 }
 
