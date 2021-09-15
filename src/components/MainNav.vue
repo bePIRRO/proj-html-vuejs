@@ -51,14 +51,13 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 ul {
   color: #fff;
-}
-
-ul a {
-  color: #fff;
-  text-decoration: none;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 li {

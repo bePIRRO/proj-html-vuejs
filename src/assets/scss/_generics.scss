@@ -1,0 +1,20 @@
+$link-color: #40c4ff;
+
+.btn {
+  padding: 10px 20px;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.btn-blue {
+  color: #fff;
+  background-color: $link-color;
+}
+
+.btn-white {
+  color: $link-color;
+  background-color: #fff;
+}
