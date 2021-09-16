@@ -4,8 +4,8 @@
       <div class="col-3 list">
         <ul>
           <li
-            v-for="service in services"
-            :key="service"
+            v-for="(service, index) in services"
+            :key="service.index"
             :class="index === currentContact ? 'selected' : ''"
             @click="setCurrentService(index)"
           >
@@ -14,11 +14,12 @@
         </ul>
       </div>
       <div class="col-9 content">
-        <h2></h2>
-        <p></p>
+        <h2>{{ services[currentService].title }}</h2>
+        <p>{{ services[currentService].text }}</p>
         <ul>
-          <li></li>
+          <li v-for="item in services.list" :key="item">{{ item.first }}</li>
         </ul>
+        <img src="" alt="" />
       </div>
     </div>
   </div>
@@ -48,7 +49,7 @@ export default {
 
         {
           listName: "Degree Programme",
-          title: "Learning Possibilities",
+          title: "Degree Programme",
           text:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque possimus provident nemo. Animi delectus eos eligendi voluptatem. Velit ullam molestiae vero qui, iusto accusantium. Illo ea quas veritatis aliquam.",
           list: {
@@ -62,7 +63,7 @@ export default {
 
         {
           listName: "Career Achievements",
-          title: "Learning Possibilities",
+          title: "Career Achievements",
           text:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque possimus provident nemo. Animi delectus eos eligendi voluptatem. Velit ullam molestiae vero qui, iusto accusantium. Illo ea quas veritatis aliquam.",
           list: {
@@ -76,7 +77,7 @@ export default {
 
         {
           listName: "Personal Managment",
-          title: "Learning Possibilities",
+          title: "Personal Managment",
           text:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque possimus provident nemo. Animi delectus eos eligendi voluptatem. Velit ullam molestiae vero qui, iusto accusantium. Illo ea quas veritatis aliquam.",
           list: {
@@ -90,7 +91,7 @@ export default {
 
         {
           listName: "Steps To Success",
-          title: "Learning Possibilities",
+          title: "The Way To Success",
           text:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque possimus provident nemo. Animi delectus eos eligendi voluptatem. Velit ullam molestiae vero qui, iusto accusantium. Illo ea quas veritatis aliquam.",
           list: {
@@ -104,7 +105,7 @@ export default {
 
         {
           listName: "Knowledge Transfer",
-          title: "Learning Possibilities",
+          title: "Work around the world",
           text:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque possimus provident nemo. Animi delectus eos eligendi voluptatem. Velit ullam molestiae vero qui, iusto accusantium. Illo ea quas veritatis aliquam.",
           list: {
@@ -123,6 +124,10 @@ export default {
     setCurrentService(index) {
       this.currentService = index;
     },
+
+    getImg() {
+      return require(`@/assets/img/${this.services.img}`);
+    },
   },
 };
 </script>
@@ -139,13 +144,14 @@ export default {
     padding: 20px 0;
   }
 
-  &.selected {
-    color: $link-color;
-    border-left: 7px solid $link-color;
-  }
-
-  &:hover {
+  li:hover {
     cursor: pointer;
+    color: $link-color;
   }
+}
+
+.selected {
+  color: $link-color;
+  border-left: 7px solid $link-color;
 }
 </style>
