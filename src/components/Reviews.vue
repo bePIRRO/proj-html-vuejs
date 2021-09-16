@@ -1,20 +1,25 @@
 <template>
   <div class="container-fluid">
-    <div class="col-12">
-      <img src="../assets/img/testimonials-standard-2.png" alt="Testimonial" />
-    </div>
-    <div class="col-12">
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem dicta
-        facilis iusto odit blanditiis quis, ab deleniti sunt, voluptatum sint,
-        esse praesentium a debitis reiciendis veritatis perspiciatis magnam qui
-        repellendus?
-      </p>
-      <h3 class="mt-5">Joan Collins</h3>
-      <h5>STUDENT</h5>
-    </div>
-    <div class="col-12">
-      <Slider />
+    <div class="container">
+      <div class="col-12">
+        <img
+          src="../assets/img/testimonials-standard-2.png"
+          alt="Testimonial"
+        />
+      </div>
+      <div class="col-12">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem dicta
+          facilis iusto odit blanditiis quis, ab deleniti sunt, voluptatum sint,
+          esse praesentium a debitis reiciendis veritatis perspiciatis magnam
+          qui repellendus?
+        </p>
+        <h3 class="mt-5">Joan Collins</h3>
+        <h5>STUDENT</h5>
+      </div>
+      <div class="col-12">
+        <Slider />
+      </div>
     </div>
   </div>
 </template>
