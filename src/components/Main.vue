@@ -1,7 +1,7 @@
 <template>
   <main class="m-5">
-    <div v-for="card in cards" :key="card.index">
-      <Card />
+    <div v-for="card in cards" :key="card" class="card-container mx-3">
+      <Card :card="card" />
     </div>
 
     <div class="text-start">
@@ -29,6 +29,7 @@ import TopButton from "./TopButton.vue";
 
 export default {
   name: "Main",
+  props: ["card"],
   components: {
     Card,
     TopButton,
@@ -63,19 +64,18 @@ export default {
         },
         {
           url: "h5-custom-icon-6.png",
-          text: "DIY%Craft",
+          text: "DIY&Craft",
           link: "#",
         },
       ],
     };
   },
-  props: {},
 };
 </script>
 
 <style scoped>
 @import "../assets/scss/_generics.scss";
-
+@import "../assets/scss/_card.scss";
 a {
   color: #40c4ff;
   font-weight: 600;

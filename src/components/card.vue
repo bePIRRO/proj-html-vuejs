@@ -16,7 +16,7 @@ export default {
   props: ["card"],
   methods: {
     getImg() {
-      return require(`../assets/img/${this.card.url}`);
+      return require(`@/assets/img/${this.card.url}`);
     },
   },
 };
@@ -24,15 +24,5 @@ export default {
 
 <style scoped lang="scss">
 @import "@/assets/scss/_generics.scss";
-a {
-  color: #303030;
-}
-
-.card {
-  background-color: #f2f8fc;
-}
-
-.card-container {
-  display: inline-block;
-}
+@import "@/assets/scss/_card.scss";
 </style>
