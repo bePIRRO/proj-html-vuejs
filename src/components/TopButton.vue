@@ -20,7 +20,8 @@ div {
   background-color: $link-color;
   color: #fff;
   width: 54px;
-  position: relative;
+  position: absolute;
   left: 99%;
+  top: 90%;
 }
 </style>

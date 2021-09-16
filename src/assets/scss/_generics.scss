@@ -1,5 +1,5 @@
 $link-color: #40c4ff;
-
+$p-color: #606264;
 .btn {
   padding: 10px 20px;
 
@@ -20,4 +20,23 @@ $link-color: #40c4ff;
 
 a {
   text-decoration: none;
+}
+
+.button-container {
+  position: relative;
+}
+
+.datas {
+  display: inline-block;
+  color: $link-color;
+  font-size: 2rem;
+
+  h2 {
+    font-weight: 900;
+    font-size: 2em;
+  }
+}
+
+main p {
+  color: $p-color;
 }
