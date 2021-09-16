@@ -24,7 +24,7 @@
         </div>
       </div>
     </div>
-    <TopButton />
+    <TopButton class="pos-left" />
   </div>
 </template>
 
