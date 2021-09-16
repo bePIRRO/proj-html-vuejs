@@ -1,6 +1,6 @@
 <template>
   <a href="#header">
-    <div class="">
+    <div class="text-center">
       <i class="fas fa-angle-up fa-2x m-0 p-0"></i>
       <h6 class="m-0 p-0">TOP</h6>
     </div>
@@ -21,6 +21,6 @@ div {
   color: #fff;
   width: 54px;
   position: relative;
-  left: 48%;
+  left: 99%;
 }
 </style>
