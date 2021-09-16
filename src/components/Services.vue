@@ -1,34 +1,40 @@
 <template>
-  <div class="container my-5">
-    <div class="row">
-      <div class="col-3 list">
-        <ul>
-          <li
-            v-for="(service, index) in services"
-            :key="service.index"
-            :class="index === currentContact ? 'selected' : ''"
-            @click="setCurrentService(index)"
-          >
-            {{ service.listName }}
-          </li>
-        </ul>
-      </div>
-      <div class="col-9 content">
-        <h2>{{ services[currentService].title }}</h2>
-        <p>{{ services[currentService].text }}</p>
-        <ul>
-          <li v-for="item in services.list" :key="item">{{ item.first }}</li>
-        </ul>
-        <img src="" alt="" />
+  <div class="container-fluid me-0 button-container">
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-3 list">
+          <ul>
+            <li
+              v-for="(service, index) in services"
+              :key="service.index"
+              :class="index === currentContact ? 'selected' : ''"
+              @click="setCurrentService(index)"
+            >
+              {{ service.listName }}
+            </li>
+          </ul>
+        </div>
+        <div class="col-9 content">
+          <h2>{{ services[currentService].title }}</h2>
+          <p>{{ services[currentService].text }}</p>
+          <ul>
+            <li v-for="item in services.list" :key="item">{{ item.first }}</li>
+          </ul>
+          <img src="" alt="" />
+        </div>
       </div>
     </div>
+    <TopButton />
   </div>
 </template>
 
 <script>
+import TopButton from "./TopButton.vue";
+
 export default {
   name: "Services",
   props: ["service"],
+  components: { TopButton },
   data() {
     return {
       currentService: 0,
