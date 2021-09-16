@@ -52,6 +52,7 @@
     <!-- reviews -->
     <Reviews />
     <Services />
+    <Popular />
   </main>
 </template>
 
@@ -60,6 +61,7 @@ import Card from "@/components/Card.vue";
 import TopButton from "./TopButton.vue";
 import Reviews from "./Reviews.vue";
 import Services from "./Services.vue";
+import Popular from "./Popular.vue";
 
 export default {
   name: "Main",
@@ -69,6 +71,7 @@ export default {
     TopButton,
     Reviews,
     Services,
+    Popular,
   },
   data() {
     return {
