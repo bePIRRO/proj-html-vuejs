@@ -53,6 +53,7 @@
     <Reviews />
     <Services />
     <Popular />
+    <Pricing />
   </main>
 </template>
 
@@ -62,6 +63,7 @@ import TopButton from "./TopButton.vue";
 import Reviews from "./Reviews.vue";
 import Services from "./Services.vue";
 import Popular from "./Popular.vue";
+import Pricing from "./Pricing.vue";
 
 export default {
   name: "Main",
@@ -72,6 +74,7 @@ export default {
     Reviews,
     Services,
     Popular,
+    Pricing,
   },
   data() {
     return {

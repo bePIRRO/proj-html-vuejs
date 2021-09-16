@@ -1,14 +1,14 @@
 <template>
-  <div class="button-container">
-    <section class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2>Popular Online Courses</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-            officiis dolorum est. Exercitationem, aliquid autem a assumenda sed
-            et animi tenetur dolor excepturi impedit possimus illo unde quia
-            perferendis deserunt!
+  <div class="button-container pt-5">
+    <section class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-9">
+          <h2 class="display-4 mt-5 mb-4">Popular Online Courses</h2>
+          <p class="my-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ea
+            adipisci labore. Repellat delectus voluptatem quam fugit debitis
+            veniam sed recusandae culpa deleniti error voluptatum quae, facere
+            voluptates amet ab?
           </p>
         </div>
       </div>
@@ -91,8 +91,8 @@
               <p>David Sanders</p>
             </div>
             <div class="col-4">
-              <span class="tag free">
-                FREE
+              <span class="tag pay">
+                20$
               </span>
             </div>
           </div>
@@ -111,7 +111,7 @@
         </div>
       </div>
       <TopButton class="pos-left" />
-      <Slider class="mt-5" />
+      <Slider class="mt-5 pb-5" />
     </section>
   </div>
 </template>
@@ -131,7 +131,7 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/scss/_generics.scss";
-.container {
+.container-fluid {
   background-image: url("../assets/img/background-pattern.jpg");
 }
 
@@ -148,12 +148,16 @@ export default {
   padding: 5px 10px;
   position: relative;
   top: 30%;
-  left: 45%;
+  left: 65%;
+  color: $white;
 }
 
 .free {
   background-color: #ffd740;
-  color: $white;
+}
+
+.pay {
+  background-color: $link-color;
 }
 
 span {
