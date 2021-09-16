@@ -5,10 +5,10 @@
         <div class="col-3 list">
           <ul>
             <li
+              @click="setCurrentService(index)"
               v-for="(service, index) in services"
               :key="service.index"
               :class="index === currentContact ? 'selected' : ''"
-              @click="setCurrentService(index)"
             >
               {{ service.listName }}
             </li>
@@ -18,9 +18,9 @@
           <h2>{{ services[currentService].title }}</h2>
           <p>{{ services[currentService].text }}</p>
           <ul>
-            <li>{{ item.list }}</li>
+            <li v-for="text in list" :key="text">{{ text }}</li>
           </ul>
-          <img src="" alt="" />
+          <img src="getImg(services.img)" alt="img" />
         </div>
       </div>
     </div>
@@ -44,12 +44,6 @@ export default {
           title: "Learning Possibilities",
           text:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque possimus provident nemo. Animi delectus eos eligendi voluptatem. Velit ullam molestiae vero qui, iusto accusantium. Illo ea quas veritatis aliquam.",
-          list: [
-            "We enrich lives throught learning.",
-            "Maximizing potential through individual attention.",
-            "The trusted name for specialized training",
-            "People teach. People learn. This is where they connect.",
-          ],
           img: "h3-custom-icon-4.png",
         },
 
@@ -58,12 +52,6 @@ export default {
           title: "Degree Programme",
           text:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque possimus provident nemo. Animi delectus eos eligendi voluptatem. Velit ullam molestiae vero qui, iusto accusantium. Illo ea quas veritatis aliquam.",
-          list: [
-            "We enrich lives throught learning.",
-            "Maximizing potential through individual attention.",
-            "The trusted name for specialized training",
-            "People teach. People learn. This is where they connect.",
-          ],
           img: "h3-custom-icon-1.png",
         },
 
@@ -72,12 +60,6 @@ export default {
           title: "Career Achievements",
           text:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque possimus provident nemo. Animi delectus eos eligendi voluptatem. Velit ullam molestiae vero qui, iusto accusantium. Illo ea quas veritatis aliquam.",
-          list: [
-            "We enrich lives throught learning.",
-            "Maximizing potential through individual attention.",
-            "The trusted name for specialized training",
-            "People teach. People learn. This is where they connect.",
-          ],
           img: "h3-custom-icon-3.png",
         },
 
@@ -86,12 +68,6 @@ export default {
           title: "Personal Managment",
           text:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque possimus provident nemo. Animi delectus eos eligendi voluptatem. Velit ullam molestiae vero qui, iusto accusantium. Illo ea quas veritatis aliquam.",
-          list: [
-            "We enrich lives throught learning.",
-            "Maximizing potential through individual attention.",
-            "The trusted name for specialized training",
-            "People teach. People learn. This is where they connect.",
-          ],
           img: "h3-custom-icon-5.png",
         },
 
@@ -100,12 +76,6 @@ export default {
           title: "The Way To Success",
           text:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque possimus provident nemo. Animi delectus eos eligendi voluptatem. Velit ullam molestiae vero qui, iusto accusantium. Illo ea quas veritatis aliquam.",
-          list: [
-            "We enrich lives throught learning.",
-            "Maximizing potential through individual attention.",
-            "The trusted name for specialized training",
-            "People teach. People learn. This is where they connect.",
-          ],
           img: "h3-custom-icon-2.png",
         },
 
@@ -114,14 +84,14 @@ export default {
           title: "Work around the world",
           text:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque possimus provident nemo. Animi delectus eos eligendi voluptatem. Velit ullam molestiae vero qui, iusto accusantium. Illo ea quas veritatis aliquam.",
-          list: [
-            "We enrich lives throught learning.",
-            "Maximizing potential through individual attention.",
-            "The trusted name for specialized training",
-            "People teach. People learn. This is where they connect.",
-          ],
           img: "h3-custom-icon-6.png",
         },
+      ],
+      list: [
+        "We enrich lives throught learning.",
+        "Maximizing potential through individual attention.",
+        "The trusted name for specialized training",
+        "People teach. People learn. This is where they connect.",
       ],
     };
   },
