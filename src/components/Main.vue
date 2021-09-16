@@ -1,13 +1,13 @@
 <template>
   <!-- print cards -->
-  <main class="m-5 me-0">
+  <main>
     <div v-for="card in cards" :key="card" class="card-container mx-4 mb-5">
       <Card :card="card" />
     </div>
 
     <!-- main article -->
     <section class="text-start mx-5 button-container">
-      <div class="mt-5">
+      <div class="mt-5 ps-5">
         <h1>The Trusted Name</h1>
         <h1>for In-Home Tutoring</h1>
         <p>
@@ -23,7 +23,7 @@
     </section>
 
     <!-- world datas -->
-    <section class="text-start m-5">
+    <section class="text-start m-5 ps-5">
       <div class="row me-1 button-container">
         <div class="col-6">
           <img src="../assets/img/h1-img-8.jpg" alt="" />
@@ -48,12 +48,16 @@
         <TopButton />
       </div>
     </section>
+
+    <!-- reviews -->
+    <Reviews />
   </main>
 </template>
 
 <script>
 import Card from "@/components/Card.vue";
 import TopButton from "./TopButton.vue";
+import Reviews from "./Reviews.vue";
 
 export default {
   name: "Main",
@@ -61,6 +65,7 @@ export default {
   components: {
     Card,
     TopButton,
+    Reviews,
   },
   data() {
     return {
@@ -105,12 +110,8 @@ export default {
 @import "../assets/scss/_generics.scss";
 @import "../assets/scss/_card.scss";
 a {
-  color: #40c4ff;
+  color: $link-color;
   font-weight: 600;
-}
-
-p {
-  font-size: 1.4em;
 }
 
 h1 {

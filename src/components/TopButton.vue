@@ -18,7 +18,7 @@ export default {
 div {
   display: inline-block;
   background-color: $link-color;
-  color: #fff;
+  color: $white;
   width: 54px;
   position: absolute;
   left: 99%;

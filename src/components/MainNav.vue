@@ -54,10 +54,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/assets/scss/_generics.scss";
+
 ul {
-  color: #fff;
+  color: $white;
   a {
-    color: #fff;
+    color: $white;
     text-decoration: none;
   }
 }

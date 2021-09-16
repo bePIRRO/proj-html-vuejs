@@ -40,6 +40,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  color: #fff;
+  color: $white;
 }
 </style>

@@ -1,21 +1,23 @@
 $link-color: #40c4ff;
 $p-color: #606264;
+$white: #fff;
+
 .btn {
   padding: 10px 20px;
 
   a {
-    color: #fff;
+    color: $white;
   }
 }
 
 .btn-blue {
-  color: #fff;
+  color: $white;
   background-color: $link-color;
 }
 
 .btn-white {
   color: $link-color;
-  background-color: #fff;
+  background-color: $white;
 }
 
 a {
@@ -29,7 +31,7 @@ a {
 .datas {
   display: inline-block;
   color: $link-color;
-  font-size: 2rem;
+  font-size: 2em;
 
   h2 {
     font-weight: 900;
@@ -39,4 +41,8 @@ a {
 
 main p {
   color: $p-color;
+}
+
+p {
+  font-size: 1.4em;
 }
