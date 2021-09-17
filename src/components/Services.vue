@@ -8,7 +8,7 @@
               @click="setCurrentService(index)"
               v-for="(service, index) in services"
               :key="service.index"
-              :class="index === currentContact ? 'selected' : ''"
+              :class="currentService === service.index ? 'selected' : ''"
             >
               {{ service.listName }}
             </li>
@@ -17,10 +17,12 @@
         <div class="col-9 content">
           <h2>{{ services[currentService].title }}</h2>
           <p>{{ services[currentService].text }}</p>
-          <ul>
-            <li v-for="text in list" :key="text">{{ text }}</li>
+          <ul class="check-list">
+            <li v-for="text in list" :key="text" class="text-start">
+              {{ text }}
+            </li>
           </ul>
-          <img src="getImg(services.img)" alt="img" />
+          <img src="getImg(services[currentService].img)" alt="img" />
         </div>
       </div>
     </div>
@@ -123,11 +125,28 @@ export default {
   li:hover {
     cursor: pointer;
     color: $link-color;
+    border-left: 7px solid $link-color;
   }
 }
 
 .selected {
   color: $link-color;
   border-left: 7px solid $link-color;
+}
+
+.check-list {
+  li {
+    list-style-type: none;
+
+    &::before {
+      font-family: "Font Awesome 5 free";
+      content: "\f00c";
+      color: $link-color;
+      display: inline-block;
+      vertical-align: middle;
+      width: 10px;
+      margin-left: 5px;
+    }
+  }
 }
 </style>
