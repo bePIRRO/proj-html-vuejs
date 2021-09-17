@@ -54,6 +54,24 @@
     <Services />
     <Popular />
     <Pricing />
+
+    <!-- banner pre-footer -->
+
+    <section class="banner container-fluid button-container py-5 my-5">
+      <div>
+        <img src="../assets/img/h5-client-5.png" alt="img" class="img-fluid" />
+      </div>
+      <div>
+        <img src="../assets/img/h5-client-1.png" alt="img" class="img-fluid" />
+      </div>
+      <div>
+        <img src="../assets/img/h5-client-2.png" alt="img" class="img-fluid" />
+      </div>
+      <div>
+        <img src="../assets/img/h5-client-1.png" alt="img" class="img-fluid" />
+      </div>
+      <TopButton class="pos-left" />
+    </section>
   </main>
 </template>
 
@@ -125,5 +143,12 @@ a {
 
 h1 {
   font-size: 4.5em;
+}
+
+// banner section
+.banner {
+  div {
+    display: inline-block;
+  }
 }
 </style>

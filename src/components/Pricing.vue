@@ -32,7 +32,7 @@
               {{ item }}
             </li>
             <li class="bg-blue">
-              <div class="btn btn-white my-5 border-0 rounded-0">
+              <div class="btn btn-white my-5 rounded-0">
                 <a href="#">GET IT NOW</a>
               </div>
             </li>
@@ -51,7 +51,7 @@
               {{ item }}
             </li>
             <li class="bg-blue">
-              <div class="btn btn-blue my-5 border-0 rounded-0">
+              <div class="btn btn-blue my-5 rounded-0">
                 <a href="#">GET IT NOW</a>
               </div>
             </li>
@@ -70,7 +70,7 @@
               {{ item }}
             </li>
             <li class="bg-blue">
-              <div class="btn btn-white my-5 border-0 rounded-0">
+              <div class="btn btn-white my-5 rounded-0">
                 <a href="#">GET IT NOW</a>
               </div>
             </li>
@@ -78,7 +78,8 @@
         </div>
       </div>
     </section>
-    <TopButton />
+    <TopButton class="pos-left" />
+    <hr />
   </div>
 </template>
 
@@ -142,6 +143,10 @@ export default {
 <style scoped lang="scss">
 @import "@/assets/scss/_generics.scss";
 
+section {
+  padding-bottom: 150px;
+}
+
 .list {
   margin: 0;
   padding: 0;
@@ -169,6 +174,10 @@ export default {
 .bg-blue {
   background-color: #f7fdff;
   list-style-type: none;
+  border: 1px solid #e5e5e5;
+}
+
+.btn {
   border: 1px solid #e5e5e5;
 }
 </style>

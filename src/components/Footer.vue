@@ -1,5 +1,5 @@
 <template>
-  <div>test</div>
+  <section></section>
 </template>
 
 <script>
@@ -9,4 +9,11 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+@import "@/assets/scss/_generics.scss";
+
+section {
+  background-color: #222;
+  height: 500px;
+}
+</style>

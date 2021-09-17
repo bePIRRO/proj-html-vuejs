@@ -113,6 +113,7 @@
       <TopButton class="pos-left" />
       <Slider class="mt-5 pb-5" />
     </section>
+    <hr />
   </div>
 </template>
 

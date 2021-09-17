@@ -1,7 +1,10 @@
+// colors
+
 $link-color: #045d8c;
 $p-color: #606264;
 $white: #fff;
 
+// buttons
 .btn {
   padding: 10px 20px;
 
@@ -31,6 +34,7 @@ a {
   position: relative;
 }
 
+// datas + p
 .datas {
   display: inline-block;
   color: $link-color;
@@ -52,6 +56,10 @@ p {
 
 .pos-left {
   position: absolute;
-  left: 97%;
+  left: 96%;
   top: 90%;
+}
+
+hr {
+  margin: 0;
 }
