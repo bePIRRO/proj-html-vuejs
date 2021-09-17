@@ -14,20 +14,27 @@
         <!-- list -->
         <div class="col-2 list" id="list">
           <ul>
-            <li v-for="text in type" :key="text">{{ text }}</li>
+            <li v-for="text in type" :key="text" class="list-table">
+              {{ text }}
+            </li>
           </ul>
         </div>
 
         <!-- standard -->
         <div class="col-2 list" id="standard">
           <ul>
-            <li>
+            <li class="list-table">
               <img src="../assets/img/h5-custom-icon-7.png" alt="" />
               <h3>Standard</h3>
               <h4>$12</h4>
             </li>
-            <li v-for="item in standard" :key="item">
+            <li v-for="item in standard" :key="item" class="list-table">
               {{ item }}
+            </li>
+            <li class="bg-blue">
+              <div class="btn btn-white my-5 border-0 rounded-0">
+                <a href="#">GET IT NOW</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -35,13 +42,18 @@
         <!-- professional -->
         <div class="col-2 list" id="pro">
           <ul>
-            <li>
+            <li class="list-table">
               <img src="../assets/img/h5-custom-icon-8.png" alt="" />
               <h3>Professional</h3>
               <h4>$59</h4>
             </li>
-            <li v-for="item in pro" :key="item">
+            <li v-for="item in pro" :key="item" class="list-table">
               {{ item }}
+            </li>
+            <li class="bg-blue">
+              <div class="btn btn-blue my-5 border-0 rounded-0">
+                <a href="#">GET IT NOW</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -49,13 +61,18 @@
         <!-- advanced -->
         <div class="col-2 list" id="pro">
           <ul>
-            <li>
+            <li class="list-table">
               <img src="../assets/img/h5-custom-icon-9.png" alt="" />
               <h3>Advanced</h3>
               <h4>$88</h4>
             </li>
-            <li v-for="item in pro" :key="item">
+            <li v-for="item in pro" :key="item" class="list-table">
               {{ item }}
+            </li>
+            <li class="bg-blue">
+              <div class="btn btn-white my-5 border-0 rounded-0">
+                <a href="#">GET IT NOW</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -77,6 +94,7 @@ export default {
         "Save up to 40% by paying weekly",
         "Number of Courses",
         "Time",
+        "Web Designing",
         "Human-Centered Design",
         "Basic Marketing",
         "Python for Everybody",
@@ -122,7 +140,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../assets/scss/_generics.scss";
+@import "@/assets/scss/_generics.scss";
 
 .list {
   margin: 0;
@@ -132,7 +150,7 @@ export default {
     padding: 0;
   }
 
-  li {
+  .list-table {
     list-style-type: none;
     background-color: #fcfcfc;
     border: 1px solid #e5e5e5;
@@ -142,9 +160,15 @@ export default {
 }
 
 #list li:first-child {
-  height: 200px;
+  height: 201px;
   font-size: 1.9em;
   text-align: start;
   padding-left: 15px;
+}
+
+.bg-blue {
+  background-color: #f7fdff;
+  list-style-type: none;
+  border: 1px solid #e5e5e5;
 }
 </style>
