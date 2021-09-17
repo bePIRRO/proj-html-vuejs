@@ -30,6 +30,8 @@
             </li>
             <li v-for="item in standard" :key="item" class="list-table">
               {{ item }}
+              <i class="fas"></i>
+              <!-- :class="(item = '1' ? 'fa-check' : 'fa-times')" -->
             </li>
             <li class="bg-blue">
               <div class="btn btn-white my-5 rounded-0">
@@ -137,6 +139,8 @@ export default {
       },
     };
   },
+
+  computed: {},
 };
 </script>
 
