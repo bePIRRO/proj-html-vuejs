@@ -22,7 +22,9 @@
               {{ text }}
             </li>
           </ul>
-          <img src="getImg(services[currentService].img)" alt="img" />
+          <figure>
+            <img src="getImg(services[currentService].img)" alt="img" />
+          </figure>
         </div>
       </div>
     </div>
