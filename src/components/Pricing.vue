@@ -80,17 +80,14 @@
         </div>
       </div>
     </section>
-    <TopButton class="pos-left" />
     <hr />
   </div>
 </template>
 
 <script>
-import TopButton from "./TopButton.vue";
 
 export default {
   name: "Pricing",
-  components: { TopButton },
   data() {
     return {
       type: [

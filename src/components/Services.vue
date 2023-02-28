@@ -28,17 +28,13 @@
         </div>
       </div>
     </div>
-    <TopButton class="pos-left" />
   </div>
 </template>
 
 <script>
-import TopButton from "./TopButton.vue";
-
 export default {
   name: "Services",
   props: ["service"],
-  components: { TopButton },
   data() {
     return {
       currentService: 0,
@@ -97,19 +93,19 @@ export default {
         "The trusted name for specialized training",
         "People teach. People learn. This is where they connect.",
       ],
-    };
+    }
   },
 
   methods: {
     setCurrentService(index) {
-      this.currentService = index;
+      this.currentService = index
     },
 
     getImg() {
-      return require(`@/assets/img/${this.services.img}`);
+      return require(`@/assets/img/${this.services.img}`)
     },
   },
-};
+}
 </script>
 
 <style scoped lang="scss">

@@ -19,7 +19,6 @@
         <a href="#">LEARN MORE</a>
       </div>
       <img src="../assets/img/h5-img-1.jpg" alt="" />
-      <TopButton />
     </section>
 
     <!-- world datas -->
@@ -45,7 +44,6 @@
             Events
           </div>
         </div>
-        <TopButton />
       </div>
     </section>
 
@@ -70,25 +68,22 @@
       <div>
         <img src="../assets/img/h5-client-1.png" alt="img" class="img-fluid" />
       </div>
-      <TopButton class="pos-left" />
     </section>
   </main>
 </template>
 
 <script>
-import Card from "@/components/Card.vue";
-import TopButton from "./TopButton.vue";
-import Reviews from "./Reviews.vue";
-import Services from "./Services.vue";
-import Popular from "./Popular.vue";
-import Pricing from "./Pricing.vue";
+import Card from "./card.vue"
+import Reviews from "./Reviews.vue"
+import Services from "./Services.vue"
+import Popular from "./Popular.vue"
+import Pricing from "./Pricing.vue"
 
 export default {
   name: "Main",
   props: ["card"],
   components: {
     Card,
-    TopButton,
     Reviews,
     Services,
     Popular,
@@ -128,9 +123,9 @@ export default {
           link: "#",
         },
       ],
-    };
+    }
   },
-};
+}
 </script>
 
 <style scoped lang="scss">

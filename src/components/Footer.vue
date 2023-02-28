@@ -103,19 +103,15 @@
         </div>
       </div>
     </div>
-    <TopButton class="pos-left" />
   </section>
 </template>
 
 <script>
-import TopButton from "./TopButton.vue";
-
 export default {
   name: "Main",
   props: {},
-  components: { TopButton },
   data() {},
-};
+}
 </script>
 
 <style scoped lang="scss">

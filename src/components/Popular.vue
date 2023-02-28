@@ -110,7 +110,6 @@
           </div>
         </div>
       </div>
-      <TopButton class="pos-left" />
       <Slider class="mt-5 pb-5" />
     </section>
     <hr />
@@ -118,16 +117,14 @@
 </template>
 
 <script>
-import TopButton from "./TopButton.vue";
-import Slider from "./Slider.vue";
+import Slider from "./Slider.vue"
 
 export default {
   name: "Popular",
   components: {
-    TopButton,
     Slider,
   },
-};
+}
 </script>
 
 <style scoped lang="scss">
